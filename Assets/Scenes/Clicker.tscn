@@ -1,0 +1,84 @@
+[gd_scene load_steps=2 format=3 uid="uid://d05bs7d0cv7ah"]
+
+[ext_resource type="Script" uid="uid://dwy1hh3n3fp6e" path="res://Assets/Scenes/clicker.gd" id="1_havet"]
+
+[node name="ClickerMenu" type="Node2D"]
+script = ExtResource("1_havet")
+metadata/_edit_horizontal_guides_ = [168.0]
+
+[node name="Click" type="Button" parent="."]
+offset_left = 256.00003
+offset_top = 256.0
+offset_right = 667.56226
+offset_bottom = 380.27637
+scale = Vector2(1.7737292, 1.544944)
+theme_override_font_sizes/font_size = 40
+text = "Click"
+
+[node name="Coins" type="Label" parent="."]
+offset_left = 576.0
+offset_top = 128.0
+offset_right = 616.0
+offset_bottom = 151.0
+scale = Vector2(3.2000022, 2.7999997)
+theme_override_colors/font_color = Color(18.892157, 18.892157, 18.892157, 1)
+text = "0"
+horizontal_alignment = 1
+
+[node name="Up" type="Button" parent="."]
+offset_left = 256.0
+offset_top = 456.0
+offset_right = 640.0
+offset_bottom = 600.0
+theme_override_font_sizes/font_size = 30
+text = "Upgrade"
+
+[node name="St" type="Label" parent="."]
+offset_left = 256.0
+offset_top = 608.0
+offset_right = 640.0
+offset_bottom = 640.0
+theme_override_font_sizes/font_size = 25
+text = "Cost:"
+
+[node name="Autockick" type="Button" parent="."]
+offset_left = 648.0
+offset_top = 456.0
+offset_right = 984.0
+offset_bottom = 600.0
+theme_override_font_sizes/font_size = 30
+text = "Passive Cklick
+"
+
+[node name="AutocklickerCost" type="Label" parent="."]
+offset_left = 648.0
+offset_top = 608.0
+offset_right = 992.0
+offset_bottom = 643.0
+theme_override_font_sizes/font_size = 25
+text = "Cost: "
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.5
+autostart = true
+
+[node name="AutoCounter" type="Label" parent="."]
+offset_left = 648.0
+offset_top = 640.0
+offset_right = 912.0
+offset_bottom = 680.0
+theme_override_font_sizes/font_size = 25
+text = "Ckicks per 1 cklick: "
+
+[node name="BasicCounter" type="Label" parent="."]
+offset_left = 256.0
+offset_top = 640.0
+offset_right = 488.0
+offset_bottom = 675.0
+theme_override_font_sizes/font_size = 25
+text = "Ckicks per 1 cklick: "
+
+[connection signal="pressed" from="Click" to="." method="_on_click_pressed"]
+[connection signal="pressed" from="Up" to="." method="_on_up_pressed"]
+[connection signal="pressed" from="Autockick" to="." method="_on_autockick_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
