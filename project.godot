@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="GodotClicker"
-run/main_scene="uid://d05bs7d0cv7ah"
+run/main_scene="uid://u6o7661vlrno"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -19,3 +19,8 @@ config/icon="res://icon.svg"
 
 window/size/viewport_width=1920
 window/size/viewport_height=1080
+window/size/mode=3
+
+[rendering]
+
+environment/defaults/default_clear_color=Color(0, 0, 0, 1)

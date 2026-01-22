@@ -1,75 +1,74 @@
 [gd_scene load_steps=2 format=3 uid="uid://d05bs7d0cv7ah"]
 
-[ext_resource type="Script" uid="uid://dwy1hh3n3fp6e" path="res://Assets/Scripts/clicker.gd" id="1_havet"]
+[ext_resource type="Script" uid="uid://bux3keo7v4bn4" path="res://Assets/Scripts/clickerGlobalScript.gd" id="1_havet"]
 
 [node name="ClickerMenu" type="Node2D"]
-position = Vector2(86, -91)
+position = Vector2(183, -80)
 script = ExtResource("1_havet")
-metadata/_edit_horizontal_guides_ = [168.0]
 
 [node name="Click" type="Button" parent="."]
-offset_left = 256.00003
-offset_top = 256.0
-offset_right = 667.56226
-offset_bottom = 380.27637
+offset_left = 265.0
+offset_top = 336.0
+offset_right = 842.3147
+offset_bottom = 460.27637
 scale = Vector2(1.7737292, 1.544944)
-theme_override_colors/font_color = Color(0.875, 0.875, 0.875, 1)
-theme_override_colors/font_focus_color = Color(0.95, 0.95, 0.95, 1)
-theme_override_colors/font_pressed_color = Color(2.201982e-06, 0.4001077, 1.92523e-07, 1)
-theme_override_colors/font_hover_color = Color(0, 0.98876625, 0, 1)
-theme_override_font_sizes/font_size = 40
-text = "Click"
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(5.565118e-07, 0.25187355, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 1, 0, 1)
+theme_override_font_sizes/font_size = 75
+text = "CLICK"
 
 [node name="Coins" type="Label" parent="."]
-offset_left = 576.0
+offset_left = 585.0
 offset_top = 128.0
-offset_right = 616.0
+offset_right = 704.9999
 offset_bottom = 151.0
 scale = Vector2(3.2000022, 2.7999997)
 theme_override_colors/font_color = Color(18.892157, 18.892157, 18.892157, 1)
-theme_override_font_sizes/font_size = 20
+theme_override_font_sizes/font_size = 50
 text = "0"
 horizontal_alignment = 1
 
 [node name="Up" type="Button" parent="."]
-offset_left = 256.0
-offset_top = 456.0
-offset_right = 640.0
-offset_bottom = 600.0
+offset_left = 265.0
+offset_top = 592.0
+offset_right = 745.0
+offset_bottom = 784.0
 theme_override_colors/font_color = Color(0.875, 0.875, 0.875, 1)
 theme_override_colors/font_focus_color = Color(0.95, 0.95, 0.95, 1)
-theme_override_colors/font_pressed_color = Color(0.5924475, 2.201982e-06, 4.3317675e-07, 1)
-theme_override_colors/font_hover_color = Color(1, 0.5637085, 0.5009239, 1)
-theme_override_font_sizes/font_size = 30
+theme_override_colors/font_pressed_color = Color(0.552962, 1.3596937e-06, 4.813075e-07, 1)
+theme_override_colors/font_hover_color = Color(1, 0.49425113, 0.42709032, 1)
+theme_override_font_sizes/font_size = 60
 text = "Upgrade"
 
 [node name="St" type="Label" parent="."]
-offset_left = 256.0
-offset_top = 608.0
-offset_right = 640.0
-offset_bottom = 640.0
-theme_override_font_sizes/font_size = 25
+offset_left = 265.0
+offset_top = 784.0
+offset_right = 649.0
+offset_bottom = 848.0
+theme_override_font_sizes/font_size = 50
 text = "Cost:"
 
 [node name="Autockick" type="Button" parent="."]
-offset_left = 648.0
-offset_top = 456.0
-offset_right = 984.0
-offset_bottom = 600.0
+offset_left = 809.0
+offset_top = 592.0
+offset_right = 1289.0
+offset_bottom = 784.0
 theme_override_colors/font_color = Color(0.875, 0.875, 0.875, 1)
 theme_override_colors/font_focus_color = Color(0.95, 0.95, 0.95, 1)
-theme_override_colors/font_pressed_color = Color(0.45890987, 0.60642606, 0, 1)
-theme_override_colors/font_hover_color = Color(0.9388745, 0.9388743, 0, 1)
-theme_override_font_sizes/font_size = 30
+theme_override_colors/font_pressed_color = Color(0.31426632, 0.3142665, 9.62615e-08, 1)
+theme_override_colors/font_hover_color = Color(0.9490196, 0.9490196, 0, 1)
+theme_override_font_sizes/font_size = 60
 text = "Passive Cklick
 "
 
 [node name="AutocklickerCost" type="Label" parent="."]
-offset_left = 648.0
-offset_top = 608.0
-offset_right = 992.0
-offset_bottom = 643.0
-theme_override_font_sizes/font_size = 25
+offset_left = 809.0
+offset_top = 784.0
+offset_right = 1153.0
+offset_bottom = 848.0
+theme_override_font_sizes/font_size = 50
 text = "Cost: "
 
 [node name="Timer" type="Timer" parent="."]
@@ -77,22 +76,43 @@ wait_time = 0.5
 autostart = true
 
 [node name="AutoCounter" type="Label" parent="."]
-offset_left = 648.0
-offset_top = 640.0
-offset_right = 912.0
-offset_bottom = 680.0
-theme_override_font_sizes/font_size = 25
+offset_left = 809.0
+offset_top = 848.0
+offset_right = 1073.0
+offset_bottom = 912.0
+theme_override_font_sizes/font_size = 50
 text = "Clicks per 1 cklick: "
 
 [node name="BasicCounter" type="Label" parent="."]
-offset_left = 256.0
-offset_top = 640.0
-offset_right = 488.0
-offset_bottom = 675.0
-theme_override_font_sizes/font_size = 25
+offset_left = 265.0
+offset_top = 848.0
+offset_right = 497.0
+offset_bottom = 912.0
+theme_override_font_sizes/font_size = 50
 text = "Clicks per 1 cklick: "
+
+[node name="ExitMenu" type="Button" parent="."]
+offset_left = 1409.0
+offset_top = 80.0
+offset_right = 1738.0
+offset_bottom = 208.0
+theme_override_colors/font_color = Color(0.875, 0.875, 0.875, 1)
+theme_override_colors/font_focus_color = Color(0.95, 0.95, 0.95, 1)
+theme_override_colors/font_pressed_color = Color(0.3892251, 0.07963949, 6.9789587e-07, 1)
+theme_override_colors/font_hover_color = Color(1, 0.4325745, 0.29060337, 1)
+theme_override_font_sizes/font_size = 50
+text = "Menu"
+
+[node name="GlobalCounter" type="Label" parent="."]
+offset_left = -183.0
+offset_top = 80.0
+offset_right = 265.0
+offset_bottom = 144.0
+theme_override_font_sizes/font_size = 35
+text = "Total clicks: "
 
 [connection signal="pressed" from="Click" to="." method="_on_click_pressed"]
 [connection signal="pressed" from="Up" to="." method="_on_up_pressed"]
 [connection signal="pressed" from="Autockick" to="." method="_on_autockick_pressed"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="pressed" from="ExitMenu" to="." method="_on_button_pressed"]

@@ -1,0 +1,67 @@
+[gd_scene load_steps=3 format=3 uid="uid://u6o7661vlrno"]
+
+[ext_resource type="Script" uid="uid://dnm7ws1homcag" path="res://Assets/Scripts/menu.gd" id="1_trrmg"]
+
+[sub_resource type="GDScript" id="GDScript_trrmg"]
+
+[node name="Menu" type="Node2D"]
+script = ExtResource("1_trrmg")
+
+[node name="PlayButton" type="Button" parent="."]
+offset_left = 704.0
+offset_top = 320.0
+offset_right = 1216.0
+offset_bottom = 512.0
+theme_override_colors/font_color = Color(0.875, 0.875, 0.875, 1)
+theme_override_colors/font_focus_color = Color(0.95, 0.95, 0.95, 1)
+theme_override_colors/font_pressed_color = Color(2.9780902e-06, 0.377955, 2.4065375e-07, 1)
+theme_override_colors/font_hover_color = Color(0, 0.8527348, 0, 1)
+theme_override_font_sizes/font_size = 100
+text = "Play"
+script = SubResource("GDScript_trrmg")
+
+[node name="QuitButton" type="Button" parent="."]
+offset_left = 704.0
+offset_top = 576.0
+offset_right = 1216.0
+offset_bottom = 768.0
+theme_override_colors/font_color = Color(0.875, 0.875, 0.875, 1)
+theme_override_colors/font_focus_color = Color(0.95, 0.95, 0.95, 1)
+theme_override_colors/font_pressed_color = Color(0.5072435, 1.2393668e-06, 3.3691526e-07, 1)
+theme_override_colors/font_hover_color = Color(1, 0.5102555, 0.44386905, 1)
+theme_override_font_sizes/font_size = 100
+text = "Quit"
+
+[node name="GameName" type="Label" parent="."]
+offset_left = 544.0
+offset_top = 64.0
+offset_right = 1376.0
+offset_bottom = 167.0
+theme_override_font_sizes/font_size = 75
+text = "My First Godot Clicker"
+
+[node name="GitHubLink" type="Button" parent="."]
+offset_left = 704.0
+offset_top = 832.0
+offset_right = 1216.0
+offset_bottom = 960.0
+theme_override_colors/font_color = Color(0.875, 0.875, 0.875, 1)
+theme_override_colors/font_focus_color = Color(0.95, 0.95, 0.95, 1)
+theme_override_colors/font_pressed_color = Color(0.3451067, 0.34510672, 0, 1)
+theme_override_colors/font_hover_color = Color(0.7483166, 0.74831647, 3.85046e-07, 1)
+theme_override_font_sizes/font_size = 35
+text = "Git Hub Project & Me"
+
+[node name="Label" type="Label" parent="."]
+offset_left = 1544.0
+offset_top = 960.0
+offset_right = 1920.0
+offset_bottom = 1072.0
+theme_override_font_sizes/font_size = 50
+text = "Patch: 2-0"
+horizontal_alignment = 2
+vertical_alignment = 2
+
+[connection signal="pressed" from="PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="QuitButton" to="." method="_on_quit_button_pressed"]
+[connection signal="pressed" from="GitHubLink" to="." method="_on_git_hub_link_pressed"]
